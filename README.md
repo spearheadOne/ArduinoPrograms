@@ -7,4 +7,5 @@ Some small arduino program sketches
 - LCD Temp - show temperature on LCD.
 - Dino Servo - catch a dinosaur from Google Chrome
 - Keypad Reader - read input from keypad
-- LCD RFID - read car via rfid and show data on lcd. 
+- LCD RFID - read card via rfid and show data on lcd.
+- LED 13 -  make orange led at port 13 blinking
