@@ -10,6 +10,11 @@ int yewllowDelayOffMs = 300;
 int blueDelayOnMs = 300;
 int blueDelayOffMs = 100;
 
+String yellowBlinkMsg = "Yellow led blinks";
+String blueBlinkMsg = "Blue led blinks";
+
+String blinkMsg = "   Blink: ";
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
@@ -21,9 +26,9 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
 
-  Serial.println("Yellow led blinks");
+  Serial.println(yellowBlinkMsg);
   for (int i=0; i<yellowBlink; i++){
-      Serial.print("   Blink: ");
+      Serial.print(blinkMsg);
       Serial.println(i);
 
       digitalWrite(yellowLedPin, HIGH);
@@ -33,9 +38,9 @@ void loop() {
       delay(blueDelayOffMs);
   }
 
-  Serial.println("Blue led blinks");
+  Serial.println(blueBlinkMsg);
   for (int i=0; i<blueBlink; i++){
-      Serial.print("   Blink: ");
+      Serial.print(blinkMsg);
       Serial.println(i);
 
       digitalWrite(blueLedPin, HIGH);
