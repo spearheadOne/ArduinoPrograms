@@ -9,4 +9,5 @@ Some small arduino program sketches
 - Keypad Reader - read input from keypad
 - LCD RFID - read card via rfid and show data on lcd.
 - LED 13 -  make orange led at port 13 blinking(similar to BLink example)
-- Yellow/BLye LED - connect two external leds to breadboard and make them blink asynchroniously
+- Yellow/Blue LED - connect two external leds to breadboard and make them blink asynchroniously
+- Yewllow/Blue V2 - extended version of yellow blue
