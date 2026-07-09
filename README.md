@@ -11,3 +11,4 @@ Some small arduino program sketches
 - LED 13 -  make orange led at port 13 blinking(similar to BLink example)
 - Yellow/Blue LED - connect two external leds to breadboard and make them blink asynchroniously
 - Yewllow/Blue V2 - extended version of yellow blue
+- Voltage Divider - read voltage from 0 to 5 depending on resistance set using potentiometer
