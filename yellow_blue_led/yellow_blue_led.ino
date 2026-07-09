@@ -4,6 +4,8 @@ int blueLedPin = 2;
 int delayOnMs = 500;
 int delayOffMs = 500;
 
+float voltage;
+
 void setup() {
   // put your setup code here, to run once:
 

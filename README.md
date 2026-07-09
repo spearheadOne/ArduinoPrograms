@@ -12,3 +12,4 @@ Some small arduino program sketches
 - Yellow/Blue LED - connect two external leds to breadboard and make them blink asynchroniously
 - Yewllow/Blue V2 - extended version of yellow blue
 - Voltage Divider - read voltage from 0 to 5 depending on resistance set using potentiometer
+- Dimm led - controll led brightness via potentiometer
