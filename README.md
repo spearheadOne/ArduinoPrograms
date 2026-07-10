@@ -14,3 +14,4 @@ Some small arduino program sketches
 - Voltage Divider - read voltage from 0 to 5 depending on resistance set using potentiometer
 - Dimm led - controll led brightness via potentiometer
 - User IO - small exmaple of entering and reading data via serial port
+- RGB LED - mix colours using rgb led element
