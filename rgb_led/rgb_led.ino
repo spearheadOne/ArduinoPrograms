@@ -18,39 +18,37 @@ void setup() {
 }
 
 void loop() {
-  
   Serial.println("Enter a desired color ");
   while(Serial.available()==0){
 
   }
 
   color = Serial.readString();
+  color.trim();
 
-  while (Serial.available() > 0) {
-    Serial.read();
-  }
+  handleColor(color);
+}
 
-  if (color == "red"){
-     analogWrite(redPin, redBrightness);
-     analogWrite(bluePin, 0);
-     analogWrite(greenPin, 0);
-  }
 
-  if (color == "blue"){
-     analogWrite(bluePin, blueBrightness);
-     analogWrite(redPin, 0);
-     analogWrite(greenPin, 0);
-  }
-  
-  if (color == "green"){
-    analogWrite(greenPin, greenBrightness);
-    analogWrite(redPin, 0);
-    analogWrite(bluePin, 0);
-  }
+void setRgb(int redBr, int greenBr, int blueBr) {
+  analogWrite(redPin, redBr);
+  analogWrite(greenPin, greenBr);
+  analogWrite(bluePin, blueBr);
+}  
 
-  if (color == "mix"){
-    analogWrite(redPin, redBrightness);
-    analogWrite(bluePin, blueBrightness);
-    analogWrite(greenPin, greenBrightness);
+void handleColor(String color) {
+  if (color == "red") {
+    setRgb(redBrightness, 0, 0);
+  }  else if (color == "green") {
+    setRgb(0, greenBrightness, 0);
+  } else if (color == "blue") {
+    setRgb(0, 0, blueBrightness);
+  }  else if (color == "mix") {
+    setRgb(redBrightness, greenBrightness, blueBrightness);
+  } else if (color == "off") {
+    setRgb(0, 0, 0);
+  } else {
+    Serial.println("Unknown color");
   }
 }
+
