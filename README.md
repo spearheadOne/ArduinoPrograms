@@ -1,6 +1,8 @@
 # ArduinoPrograms
 Some small arduino program sketches
 
+#NOTE: electric schemes how to connect stuff are not included
+
 - Blink - blink a led periodically.
 - Blink Button - blink a led by button pressing.
 - LCD - print something on LCD.
@@ -15,3 +17,4 @@ Some small arduino program sketches
 - Dimm led - controll led brightness via potentiometer
 - User IO - small exmaple of entering and reading data via serial port
 - RGB LED - mix colours using rgb led element
+- Color Sensor - read color using color sensor and show it on RGB led
