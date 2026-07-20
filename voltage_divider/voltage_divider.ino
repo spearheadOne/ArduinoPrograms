@@ -1,6 +1,7 @@
 int potPin = A0;
-int rawVoltage; // 0v = 0; 5v = 1023;
+int rawVoltage;// 0v = 0; 5v = 1023; 
 float voltage;
+
 
 
 void setup() {

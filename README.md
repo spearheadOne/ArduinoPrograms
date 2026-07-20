@@ -18,3 +18,4 @@ Some small arduino program sketches
 - User IO - small exmaple of entering and reading data via serial port
 - RGB LED - mix colours using rgb led element
 - Color Sensor - read color using color sensor and show it on RGB led
+- Servo Pot - read voltage using potentiometer and rotate servo to maximum position calculated basd on it
