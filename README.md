@@ -19,3 +19,4 @@ Some small arduino program sketches
 - RGB LED - mix colours using rgb led element
 - Color Sensor - read color using color sensor and show it on RGB led
 - Servo Pot - read voltage using potentiometer and rotate servo to maximum position calculated basd on it
+- Ultrasonic Sound Speed - show speed of sound using ultrasonic sensor
