@@ -6,15 +6,15 @@ void setup(){
   
   //rows-cols  
   lcd.begin(16,2);
-  
-  lcd.print("LEMUUUUR! MUUURRR!!");
+  lcd.setCursor(0,0);
+   
+  lcd.print("Timer: ");
 }
 
 void loop(){
-  
-  //cursor pos 
+   //cursor pos 
   lcd.setCursor(0,1);
- 
+
   //seconds since restart
   lcd.print(millis()/1000);
 }

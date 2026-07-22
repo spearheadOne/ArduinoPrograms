@@ -31,8 +31,8 @@ void loop() {
 
   digitalWrite(triggerPin, LOW);
   
-  unsigned long pingTimeUs = pulseIn(echoPin, HIGH);
-  float targetDistance = speedOfSound * pingTimeUs / 72000.0; //in cm
+  unsigned long pingTimeMs = pulseIn(echoPin, HIGH);
+  float targetDistance = speedOfSound * pingTimeMs / 72000.0; //in cm
 
   int servoAngle = map(targetDistance, 0, 10, 37, 143); //0-10 cm, 37-143 degrees
   servo.write(servoAngle);

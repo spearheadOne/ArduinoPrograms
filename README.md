@@ -21,3 +21,4 @@ Some small arduino program sketches
 - Servo Pot - read voltage using potentiometer and rotate servo to maximum position calculated basd on it
 - Ultrasonic Sound Speed - show speed of sound using ultrasonic sensor
 - Ultrasonic Distance - measrure distance to object using ultrasonic sensor and rotate servo accordingly to point to distance written on piece of paper(distance range between 0 and 10 cm)
+- Ultrasonic Distance LCD - measrure distance to object using ultrasonic sensor and show on LCD display.
